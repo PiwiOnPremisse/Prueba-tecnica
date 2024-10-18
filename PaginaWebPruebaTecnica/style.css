@@ -1,0 +1,258 @@
+:root{
+    --color-primary : #0033a0;
+    --color-secondary : #00aec7;
+    --Blanco-1: aliceblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+
+body{
+    background: rgb(0,51,160);
+    background: linear-gradient(90deg, rgba(0,51,160,1) 26%, rgba(0,174,199,1) 82%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*Diseño header */
+header{
+ 
+    background-color: rgba(255, 255, 255, 0);
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border: 1px solid black;
+}
+
+.links{
+    
+    display: flex;
+    gap: 15px;
+    
+}
+
+.links a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: aliceblue;
+    padding: 10px,5px,10px,5px;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 20px;
+}
+
+.links a:hover{
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #006BFF;
+}
+
+/*Logo*/
+header img{
+    margin-left: 2%;
+    height: 80px;
+}
+
+/*Imagen principal*/
+.PortalInicio{
+    width: 100%;
+    height: 70vh;
+    background-color: aliceblue;
+    background-image: url(img/sura-image-descrip-mov.svg);
+    background-position: center;
+    background-repeat: repeat-x;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.contenidoTitulo{
+    background-color: var(--color-primary);
+    color: aliceblue;
+    width: 30vw;
+
+    margin-right: 5vw;
+    border-radius: 120px 0px 120px 0px;
+}
+
+
+.contenidoTitulo h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5rem;
+    font-weight: 200;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+
+
+.modalEnviado{
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.671);
+    display: none;
+    z-index: 3;
+}
+
+.formulario{
+    margin-top: 10vh;
+    padding-top: 1rem;
+    border-radius: 10px;
+    width: 70vw;
+    background-color: aliceblue;
+    display: flex;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    
+    
+    flex-direction: column;
+}
+
+.titulo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    width: 96%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: var(--color-secondary);
+    color: aliceblue;
+    padding-left: 25px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.botones{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+ 
+#submitBtn{
+    cursor: pointer;
+    
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: aliceblue;
+    font-size: 1.5rem;
+    background-color: var(--color-secondary);
+    border-radius: 6px;
+    margin: 20px;
+}
+
+#submitBtn:hover{
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--color-primary);
+}
+
+/* Diseño formulario y campos*/
+.TablaCuadros{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.buttonBasura{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: red;
+    color: var(--Blanco-1);
+    border-radius: 50px;
+}
+
+.buttonModificar{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: var(--color-primary);
+    color: var(--Blanco-1);
+    border-radius: 50px;
+}
+
+
+
+.tableCuadro{
+    width: 90%;
+    height: 600px;
+}
+
+.FormCuadroSeguro{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 90%;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 95%;
+}
+
+.form-group input {
+    width: 100%;
+    padding:15px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: none;
+    box-shadow: #999;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: aliceblue;
+    padding: 0 5px;
+    color: #999;
+    font-size: 20px;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: var(--color-primary);
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    top: 0;
+    left: 10px;
+    font-size: 1.2em;
+    color:var(--color-primary);
+}
