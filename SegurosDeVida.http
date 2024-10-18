@@ -1,0 +1,6 @@
+@SegurosDeVida_HostAddress = http://localhost:5248
+
+GET {{SegurosDeVida_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
